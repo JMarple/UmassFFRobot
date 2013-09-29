@@ -25,10 +25,10 @@ void setMotorDefaults(DriveMotor *motor)
 {
   motor->stepPin = 22;
   motor->velocity = 0;
-  motor->targetVelocity = 1000;  
+  motor->targetVelocity = 500;  
   motor->wheelDiam = 31;
   motor->stepsPerRotation = 200;
-  motor->acceleration = 1000;
+  motor->acceleration = 10;
   motor->stepDelay = getStepDelay(*motor);
 }
 

@@ -15,10 +15,12 @@ void setup()
 {
   /* Motor Setup */
   setMotorDefaults(&leftDrive);
+  leftDrive.stepPin = 22;
   setMotorDefaults(&rightDrive);
   rightDrive.stepPin = 23;
   
-  pinMode(leftDrive.stepPin, OUTPUT);   
+  pinMode(leftDrive.stepPin, OUTPUT);
+  pinMode(rightDrive.stepPin, OUTPUT);  
 }
 
 void loop()
